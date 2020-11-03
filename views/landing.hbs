@@ -1,0 +1,41 @@
+<div class="row">
+  <div class="d-flex justify-content-center col-md-12">
+    <h1>TV Shows Database</h1>
+  </div>
+</div>
+<div class="row">
+
+
+
+  {{#each results}}
+  <div class="col-md-3">
+
+    <div class="card" style="width: 18rem;">
+      <img src="{{this.image}}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{this.name}}</h5>
+        <a href="/result/{{this.tvid}}" class="btn btn-primary"><i class="fas fa-tv"></i> Explore</a>
+      </div>
+    </div>
+  </div>
+  {{/each}}
+</div>
+<div class="row">
+  <div class="col-md-6 d-flex justify-content-end">
+    <form action="/" method="get">
+      <div class="form-group">
+        <input type="hidden" name="offset" value="{{offsetBack}}">
+      </div>
+      <button class="btn btn-danger" type="submit">Back</button>
+    </form>
+  </div>
+  <div class="col-md-6 d-flex justify-content-start">
+  <form action="/" method="get">
+    <div class="form-group">
+
+      <input type="hidden" name="offset" value="{{offsetNext}}">
+    </div>
+    <button class="btn btn-success" type="submit">Next</button>
+  </form>
+  </div>
+</div>

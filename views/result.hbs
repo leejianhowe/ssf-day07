@@ -1,0 +1,25 @@
+<div class="row">
+  <div class="col-md-12 d-flex justify-content-center">
+    <h1>{{result.name}}</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-6 text-center">
+    <img src={{result.image}}>
+  </div>
+  <div class="col-md-4">
+    {{{result.summary}}}
+    <p>Rating: {{result.rating}}</p>
+    <form>
+      <div class="form-group">
+        <button type="submit" class="btn btn-danger" formaction="/">Back</button>
+      </div>
+    </form>
+    {{#if result.official_site}}
+    <form>
+      <button class="btn btn-info" type="submit" formtarget="_blank" formaction="{{result.official_site}}"><i class="fas fa-tv"></i> Explore Offical Site</button>
+    </form>
+    {{/if}}
+  </div>
+</div>
+</div>

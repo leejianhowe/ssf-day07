@@ -1,0 +1,22 @@
+{
+  "name": "ssf-day07",
+  "version": "1.0.0",
+  "description": "tv sql dynamic routing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "dynamic",
+    "routing",
+    "sql",
+    "express"
+  ],
+  "author": "jhlee",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "mysql2": "^2.2.5"
+  }
+}
