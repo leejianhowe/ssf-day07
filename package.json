@@ -4,7 +4,8 @@
   "description": "tv sql dynamic routing",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "keywords": [
     "dynamic",
@@ -18,5 +19,8 @@
     "express": "^4.17.1",
     "express-handlebars": "^5.2.0",
     "mysql2": "^2.2.5"
+  },
+  "engine":{
+    "node": "15.x"
   }
 }
